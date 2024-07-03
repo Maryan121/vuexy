@@ -18,13 +18,24 @@ const config: Config = {
           "bg":"#F8F8F8",
           "heading":"#5E5873",
           "parag":"#6E6B7B",
-          "purpuleish":'#7367F0'
+          "purpuleish":'#7367F0',
+          
         },
         "red":'#EA5455',
         "facebook":'#3B5998',
         "twitter":'#00ACEE',
         "mail":'#DB3236',
-        "github":'#211F1F'
+        "github":'#211F1F',
+        "grayish":'#B9B9C3',
+        'orange':'#FF9F43',
+        "white":'#fff',
+        "lightpurple":'#7367F01F',
+        "lightgreen":"#28C76F1F",
+        "lightred":'#EA54551F',
+        "lightblue":'#00CFE81F',
+        "lightorange":'#FF9F431F',
+        "blueish":'#00CFE8',
+        
       }
     },
   },

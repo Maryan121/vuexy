@@ -29,7 +29,7 @@ function Register(props) {
                     </div>
                     <input type="checkbox" className='mt-4'/>
                     <span className=' text-sm text-primary-parag ml-2'>i agree to <span className='text-light text-primary-purpuleish'>privacy policy & terms</span></span>
-                    <Button href='#' text='sign up'/>
+                    <Button href='/pages/bloglist' text='sign up'/>
                     {/* <button className='py-2 bg-primary-purpuleish block text-white font-bold capitalize p-2 w-full mt-3 rounded hover:opacity-80'>sign up</button> */}
                     <div className='flex justify-center mt-4'>
                         <span className='self-center text-primary-parag text-sm  '>Already have an account?</span>

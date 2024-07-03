@@ -22,7 +22,7 @@ function FormLogin(props) {
                 </div>
                 <input type="checkbox" className='mt-4'/>
                 <span className='capitalize text-sm text-primary-parag ml-2'>remember me</span>
-                <Button href='#' text='login' onClick={console.log('clicked')}/>
+                <Button href='/pages/bloglist' text='login' onClick={console.log('clicked')}/>
                 <div className='flex justify-center mt-4'>
                     <span className='self-center text-primary-parag text-sm  '>New On Our platform?</span>
                     <Link href='/pages/register' className='self-center ml-2 text-primary-purpuleish text-sm hover:opacity-80 font-light'>Create new account</Link> 
