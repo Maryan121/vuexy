@@ -17,7 +17,7 @@ import claudia from '../../../public/images/blocklist/claudia.png'
 
 function BlogList(props:any) {
     return (
-        <div className='grid grid-cols-2'>       
+        <div className='md:grid grid-cols-2'>       
             <Template image={postImage1} name='chani paradita'
              title='The Best Features Coming to iOS and Web design' 
              personImg={ghaniAvatar} description='Cupcake ipsum dolor. Amet dessert donut candy chocolate bar cotton dessert candy.'

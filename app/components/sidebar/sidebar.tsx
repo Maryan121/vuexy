@@ -1,4 +1,5 @@
-import React from 'react';
+'use client'
+import React, { useState } from 'react';
 import Image from 'next/image';
 import Logo from '../login/logo';
 import mask from '../../../public/images/sidebar/Mask.png'
@@ -21,11 +22,13 @@ import FormsAndTables from './formaAndTables';
 
 
 function Sidebar(props) {
+    
     return (
-        <div className='bg-white px-6 py-7 rounded shadow shadow-lg' style={{height:'100vh'}}>
+        <div className={`absolute z-10 md:block bg-white px-6 py-7 rounded shadow shadow-lg sidebar ${props.isSidebarOpen ? 'block' : 'hidden md:block'}`}>
             <div className='flex justify-between'>
-                <Logo />
-                <Image src={mask} className='self-center' alt='mask-icon' />
+                <div onClick={props.toggleMenu} className='cursor-pointer'><Logo /></div>
+                {/* <span className='self-center text-xxl cursor-pointer'>x</span> */}
+                <Image src={mask} className='flex self-center cursor-pointer' alt='mask-icon' onClick={props.toggleMenu}/>
             </div>
             <div className='bg-primary-bg p-2 mt-4 flex justify-between'>
                 <SidebarTemplate text='dashboards' icon={home} style='flex gap-3 text-primary-heading bg-primary-bg capitalize text-sm rounded '/>
@@ -62,6 +65,7 @@ function Sidebar(props) {
             <UiElements />
             <FormsAndTables />
         </div>
+        
     );
 }
 

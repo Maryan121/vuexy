@@ -8,7 +8,7 @@ import star from '../../../public/images/star.png'
 
 function LeftNav(props) {
     return (
-        <div className='flex gap-4'>
+        <div className='flex gap-4 hidden sm:flex'>
             <Image className='self-center cursor-pointer' src={check} alt='check-icon' />
             <Image className='self-center cursor-pointer' src={message} alt='message-icon' />
             <Image className='self-center cursor-pointer' src={mail} alt='mail-icon' />
