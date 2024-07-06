@@ -16,11 +16,11 @@ function BlogListLayout({children}) {
             <div>
                 <Sidebar isSidebarOpen={isSidebarOpen} toggleMenu={toggleMenu}/>
             </div>
-            <div className='md:col-span-7'>
+            <div className='md:col-span-7' >
                <Navbar toggleMenu={toggleMenu}/>
                <SubHeader />
-               <div className='lg:grid grid-cols-5 gap-4 md:px-7 '>
-                    <section className='col-span-4' style={{height:"80vh",overflow:'scroll'}}>
+               <div className='lg:grid grid-cols-5 gap-4 md:px-7 ' >
+                    <section className='col-span-4' style={{height:'80vh',overflow:'scroll'}}>
                         {children} 
                     </section>
                     <section>

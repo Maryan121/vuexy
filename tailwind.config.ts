@@ -35,6 +35,7 @@ const config: Config = {
         "lightblue":'#00CFE81F',
         "lightorange":'#FF9F431F',
         "blueish":'#00CFE8',
+        "gradient":'#9E95F5'
         
       }
     },

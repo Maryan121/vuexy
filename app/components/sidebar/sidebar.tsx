@@ -24,7 +24,7 @@ import FormsAndTables from './formaAndTables';
 function Sidebar(props) {
     
     return (
-        <div className={`absolute z-10 md:block bg-white px-6 py-7 rounded shadow shadow-lg sidebar ${props.isSidebarOpen ? 'block' : 'hidden md:block'}`}>
+        <div className={`absolute z-10 md:block bg-white px-6 py-4 rounded shadow shadow-lg sidebar ${props.isSidebarOpen ? 'block' : 'hidden md:block'}`}>
             <div className='flex justify-between'>
                 <div onClick={props.toggleMenu} className='cursor-pointer'><Logo /></div>
                 {/* <span className='self-center text-xxl cursor-pointer'>x</span> */}
