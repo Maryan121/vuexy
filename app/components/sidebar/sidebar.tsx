@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import Logo from '../login/logo';
 import mask from '../../../public/images/sidebar/Mask.png'
@@ -38,7 +39,7 @@ function Sidebar(props) {
                 </div>
             </div>
             
-            <SidebarTemplate text='analytics' icon={circleIcon} style='flex gap-3 mt-1 text-white capitalize p-2 px-3 text-sm bg-primary-purpuleish rounded '/>
+            <Link href='/pages/analytics'><SidebarTemplate text='analytics' icon={circleIcon} style='flex gap-3 mt-1 text-white capitalize p-2 px-3 text-sm bg-primary-purpuleish rounded '/></Link>
             <SidebarTemplate text='ecommerce' icon={circleIcon} style='flex gap-3 mt-1 text-primary-heading p-2 px-3 text-sm rounded '/>
 
             {/* apps section */}

@@ -6,7 +6,7 @@ import shape from '../../../../public/images/analytics/Shape.svg'
 
 function Congratulation(props:any) {
     return (
-        <div className=' bg-gradient-to-r from-primary-purpuleish to-gradient text-white md:mx-5 flex flex-col gap-2 justify-center h-60 p-3 lg:p-9 py-10 rounded-lg relative'>
+        <div className=' bg-gradient-to-r from-primary-purpuleish to-gradient text-white  flex flex-col gap-2 justify-center h-60 p-3 lg:p-9 py-10 rounded-lg relative'>
             <Image src={shape} className='self-center my-4' alt=''/>
             <h3 className='self-center capitalize text-3xl'>Congratulations John,</h3>
             <p className='self-center text-sm md:px-32 text-center leading-5'>You have done <span className='font-bold'>57.6%</span> more sales today. Check your new badge in your profile.</p>

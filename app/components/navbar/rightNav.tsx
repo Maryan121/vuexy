@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import Image from 'next/image';
 import usFlag from '../../../public/images/navbar/usaFlag.png'
 import mask from '../../../public/images/navbar/Mask.png'
@@ -7,6 +7,7 @@ import notification from '../../../public/images/navbar/notification.png'
 import status from '../../../public/images/navbar/Status.png'
 
 function RightNav(props) {
+   
     return (
         <div className='flex gap-4 sm:gap-6'>
             <div className='flex gap-2'>
@@ -18,7 +19,8 @@ function RightNav(props) {
                 <Image src={cart} alt='cart-icon' />
                 <span className='absolute -top-2  -right-1 bg-primary-purpuleish text-white text-xs px-1 rounded-full'>8</span>
             </div>
-            <div className='relative  self-center'> 
+            <div className='relative  self-center cursor-pointer' onClick={props.toggleCompo}> 
+               
                 <Image src={notification} alt='notification-icon' />
                 <span className='absolute -top-2  -right-1 bg-red text-white text-xs px-1 rounded-full'>4</span>
             </div>
